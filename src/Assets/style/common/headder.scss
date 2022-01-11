@@ -1,0 +1,22 @@
+.Header{
+    width: 100%;
+    background: $white;
+
+    &-Menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // custom css Menu antd
+        .ant-menu-item-only-child{
+            padding: 35px 20px !important;
+        }
+
+        .Login{
+            span{
+                margin-right: 30px;
+            }
+        }
+    }
+}

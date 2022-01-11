@@ -1,0 +1,210 @@
+.Banner {
+    width: 100%;
+    height: 657px;
+    background: url(../../images/banner-img-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 155px 0;
+        height: 100%;
+    }
+
+    &-Content {
+        &-Title {
+            font-size: 50px;
+            color: #fff;
+            line-height: 1.3;
+            margin-bottom: 44px;
+            font-weight: bold;
+        }
+        &-Description {
+            width: 295px;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+
+    &-Button {
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            margin-right: 20px;
+        }
+    }
+}
+
+.ConTractProgress {
+    .BoxProcess {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        .ProcessItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+
+            &-icon {
+                margin-bottom: 35px;
+            }
+
+            &-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            &-des {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.Service {
+    width: 100%;
+
+    &-Title {
+        width: 100%;
+        padding: 80px 0;
+        background-color: $bgBox;
+    }
+
+    .ItemService {
+        display: flex;
+        column-gap: 100px;
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+
+        img {
+            min-width: 610px;
+        }
+    }
+}
+
+.EAQ {
+    background: $blue;
+    color: $white;
+
+    &-Content {
+        display: flex;
+        justify-content: space-between;
+        &-Title {
+            font-size: 48px;
+            font-weight: bold;
+            width: 220px;
+        }
+
+        &-Des {
+            font-size: 16px;
+        }
+    }
+}
+
+.Feature {
+    &-Item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &-Img {
+            width: 500px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &.reverse {
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        &-Content {
+            width: 450px;
+            .title {
+                font-size: 41px;
+                width: 300px;
+                font-weight: bold;
+            }
+
+            .BoxListFt {
+                margin-top: 20px;
+
+                .ItemList {
+                    margin-top: 50px;
+
+                    .title {
+                        font-size: 23px;
+                    }
+
+                    .des {
+                        font-size: 17px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.WhyChoose {
+    .BoxList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 80px 0;
+
+        .ColList {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            .Item {
+                display: flex;
+                flex-direction: column;
+                color: #abacaf;
+                cursor: pointer;
+                transition: all .5s;
+                
+                &:hover{
+                    color: $black;
+                }
+                &.left {
+                    align-items: flex-start;
+                }
+                &.right {
+                    align-items: flex-end;
+                    .title {
+                        text-align:right;
+                    }
+                    .des {
+                        text-align:right;
+                    }
+                }
+                .title {
+                    font-size: 23px;
+                    margin-top: 25px;
+                }
+                .des {
+                    font-size: 17px;
+                    margin-top: 20px;
+                    width: 250px;
+                }
+            }
+        }
+
+        .Image {
+            width: 610px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// --------global--------
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./base.scss";
+@import "./reset.scss";
+
+// ---------Comon--------
+@import "./common/headder.scss";
+@import "./common/Section.scss";
+@import "./common/Footer.scss";
+
+// -----------Home-----------
+@import "./home/home.scss";

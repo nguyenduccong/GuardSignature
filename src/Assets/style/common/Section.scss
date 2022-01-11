@@ -1,0 +1,92 @@
+.section {
+    width: 100%;
+    padding: 120px 0;
+}
+
+.BoxTitle {
+    width: 100%;
+
+    &.row {
+        &-center {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .title{
+                text-align: center;
+            }
+
+            .description{
+                text-align: center;
+            }
+        }
+        &-start {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            .title{
+                text-align: left;
+            }
+             .description{
+                text-align: left;
+            }
+        }
+        &-end {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            .title{
+                text-align: right;
+            }
+             .description{
+                text-align: right;
+            }
+        }
+    }
+
+    &.col {
+        &-center {
+            display: flex;
+            justify-content: center;
+        }
+        &-sp {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .top{
+        font-size: 18px;
+        font-weight: 300;
+        color: $blue;
+        margin-bottom: 30px;
+    }
+
+    .title{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .description{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.boxButton{
+    display: inline-flex;
+    padding: 17px 30px;
+    color: $white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    &.btn-black{
+        background: $black;
+    }
+    &.btn-blue{
+        background: $blue;
+    }
+    span{
+        margin-right:40px;
+    }
+}
+
