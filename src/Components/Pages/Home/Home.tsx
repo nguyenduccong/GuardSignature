@@ -1,12 +1,17 @@
-import React from 'react'
-import Title from '../../Common/Title/title'
-import Banner from './Components/Banner/Banner'
-import ContractingProcess from './Components/ContractingProcess/ContractingProcess'
-import Feature from './Components/Feature/feature'
-import Service from './Components/service/service'
-import WhyChoose from './Components/WhyChoose/WhyChoose'
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import Banner from './Components/Banner/Banner';
+import ContractingProcess from './Components/ContractingProcess/ContractingProcess';
+import Feature from './Components/Feature/feature';
+import Service from './Components/service/service';
+import WhyChoose from './Components/WhyChoose/WhyChoose';
 
 const Home = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000 })
+        
+    })
     return (
         <div>
             <Banner />
